@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Group- Chad Gym</title>
+    <script src="https://kit.fontawesome.com/28670d17e1.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/sign_up_page_CSS.css">
+    <link rel="icon" href="./Pictures/chad_symbol.png">
+</head>
+<body>
+    <div class="Split_Screen">
+        <div class="left">
+            <section class="copy">
+                <h1>CHAD GYM</h1>
+                <p>AWAKEN THE CHAD INSIDE YOU</p>
+            </section>  
+        </div>
+        <div class="right">
+            <form action="./Home_Page.html">
+                <section class="copy">
+                    <h2>SIGN UP</h2>
+                    <div class="If_account">
+                        <p>ALREADY GOT AN ACCOUNT? <a class="btn" href="Login_Page.html">LOGIN</a></p>
+                    </div>
+                </section>
+                <div class="input_container_name">
+                    <label for="fname">FULL NAME</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <div class="input_container_email">
+                    <label for="email_id">EMAIL ID</label>
+                    <input type="email" id="email_id" name="email_id" required>
+                </div>
+                <div class="input_container_password">
+                    <label for="pass">PASSWORD</label>
+                    <input type="password" id="pass" name="pass" placeholder="Must be at least 6 characters" required>
+                    
+                    <i class='bx bx-hide'></i>
+                </div>
+                <div class="input_container_cta">
+                    <label class="checkbox_container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div class="label-check">
+                        SIGN UP FOR EMAIL UPDATES.
+                    </div>
+                </div>
+                <a href="Login_Page.html">
+                    <button class="sign_up_btn" type="submit">SIGN UP</button>
+                </a>    
+                <section class="copy_legal">
+                    <p><span class="small">By continuing, you agree to accept our<br><a href="#">Privacy Policy</a> & <a href="#">Terms of Service</a>.</span></p>
+                </section>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

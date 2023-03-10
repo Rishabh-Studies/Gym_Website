@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+:root {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #ccc;    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color:black;
+}
+
+.right {
+    background: #1b1b1b;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: gold;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+.small {
+    font-size: 80%;
+    text-align: center;
+}
+
+.Split_Screen {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    height: 200px;
+    background: url(../Pictures/Sign_up_left_split.jpg);
+    background-size: cover;
+}
+
+.left .copy {
+    color: white;
+    text-align: center;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;    
+}
+
+.left p {
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.left h1 {
+    color: gold;
+    text-decoration: underline;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.left , .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.right .copy {
+    text-align: center;
+}
+
+.right .copy p {
+    margin: 1.5em 0;
+    font-size: 0.875rem; 
+}
+
+.right form {
+    width: 328px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875;
+    color: white;
+    background: #1b1b1b;
+}
+
+label {
+    display: block;
+    margin: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.input_container_password {
+    position: relative;
+}
+
+.input_container_password i {
+    position: absolute;
+    top: 37px;
+    right: 19px;
+    cursor: pointer;
+}
+
+.checkbox_container {
+    display: inline block;
+    position: relative;    
+    cursor: pointer;
+    user-select: none;    
+}
+
+form input[type="checkbox"] {    
+    position: relative;
+    width: 40px;
+    height: 20px;
+    -webkit-appearance: none;
+    background-color: goldenrod;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);  
+    transition: .5s;  
+}
+
+form input:checked[type="checkbox"] {
+    background: gold;
+}
+
+form input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: white;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+
+form input:checked[type="checkbox"]:before {
+    left:20px;
+}
+
+.input_container_cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sign_up_btn {
+    display: block;
+    width: 100%;
+    background: gold;    
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+}
+
+.sign_up_btn a {
+    color: black;
+}
+
+.sign_up_btn:hover {
+    background: goldenrod;
+    cursor: pointer;
+}
+
+button {    
+    padding: 9px 25px;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn {
+    padding: 9px 25px;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #fff;
+}
+
+button a {
+    color: white;
+}
+
+@media screen and (min-width: 900px) {
+    .Split_Screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left,
+    .right {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}
+

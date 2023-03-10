@@ -1,0 +1,171 @@
+.Content_Home {
+    display: flex;    
+    color: white; 
+    background: black;
+    justify-content: space-evenly;
+    border-bottom: 1px solid honeydew;
+}
+
+.Left_Plate { 
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.Mid_Plate {
+    display: flex;
+    background: url("../Pictures/Chad_pic_home.jpg") center;
+    background-size: cover;
+    align-items: center; 
+    background-origin: padding-box;
+}
+
+.Right_Plate {    
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.Display_Icons {
+    padding: 20px 30px;
+    display:flex;   
+    background: black;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Icon_Names {
+    padding-bottom: 20px;
+    display:flex;   
+    background: black;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.Reviews {
+    margin-top: 15px;
+    display:flex;
+    align-items: center baseline;
+    justify-content: space-evenly;
+}
+
+.Testimonials_Main {
+    margin: 30px;
+    padding: 10px;
+}
+
+.Testimonial_1 {
+    background: url(../Pictures/potential-1.jpg);  
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px; 
+    box-shadow: 5px  5px 3px black;   
+}
+
+.Testimonial_2 {
+    background: url(../Pictures/potential-2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 5px  5px 3px black;
+}
+
+.Testimonial_3 {
+    background: url(../Pictures/OwO.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 5px  5px 3px black;
+}
+
+.Testimonial_4 {
+    background: url(../Pictures/potential-4.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 5px  5px 3px black;
+}
+
+.Stuff {
+    background: rgba(0, 0, 0, 0.6);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; 
+    transition: opacity 0.25s;   
+}
+
+.Stuff > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.Stuff:hover > * {
+    transform: translateY(0px);
+}
+.Stuff:hover {
+    opacity: 1;
+}
+
+.Comments {
+    font-size: 15px;
+}
+
+.Talk_To_Us {
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+    background: gainsboro;
+}
+
+.Home_Form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+h1 span {
+    color: goldenrod;
+}
+
+span {
+    color: gold;
+}

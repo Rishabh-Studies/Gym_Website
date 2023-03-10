@@ -1,0 +1,183 @@
+.Courses_Main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1d061a;  
+    flex-direction: column;
+}
+
+.Three_Cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.Three_Cards .Box {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 30px;
+    transition: 0.5s;
+}
+
+.Three_Cards .Box::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+}
+
+.Three_Cards .Box::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;    
+    transition: 0.5s;
+}
+
+.Three_Cards .Box:hover:before,
+.Three_Cards .Box:hover:after {
+    transform: skewX(0deg);
+    left: 20px;
+    width: calc(100% - 90px);
+}
+
+.Three_Cards .Box:nth-child(1):before,
+.Three_Cards .Box:nth-child(1):after
+{
+    background: linear-gradient(315deg,#ffbc00,#ff0058);
+}
+
+.Three_Cards .Box:nth-child(2):before,
+.Three_Cards .Box:nth-child(2):after
+{
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+}
+
+.Three_Cards .Box:nth-child(3):before,
+.Three_Cards .Box:nth-child(3):after
+{
+    background: linear-gradient(315deg,#4dff03,#00d0ff);
+}
+
+.Three_Cards .Box span {
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:50;
+    pointer-events: none;
+}
+
+.Three_Cards .Box span::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius: 8px;
+    background:rgba(255,255,255,0.1);    
+    opacity:0;
+    transition:0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.Three_Cards .Box:hover span::before {
+    top:-50px;
+    left:50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+.Three_Cards .Box span::after {
+    content: '';
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    height:100%;
+    border-radius: 8px;
+    background:rgba(255,255,255,0.1);    
+    opacity:0;
+    transition:0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    animation-delay: -1s;
+}
+
+.Three_Cards .Box:hover span::after {
+    bottom:-50px;
+    right:50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+@keyframes animate {
+    0%,100%
+    {
+        transform: translateY(10px);
+    }
+    50%
+    {
+        transform: translateY(-10px);
+    }
+}
+
+.Three_Cards .Box .Info {
+    position:relative;
+    left: 0;
+    padding: 20px 40px;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;    
+    z-index: 1;
+    transition: 0.5s; 
+    color: #fff;
+}
+
+.Three_Cards .Box:hover .Info {
+    left: -25px;
+    padding: 60px 40px;    
+}
+
+.Three_Cards .Box .Info h2 {
+    font-size: 2em;
+    color: gold;
+    margin-bottom: 10px;
+}   
+
+.Three_Cards .Box .Info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}    
+

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+nav {
+    background-color: #1b1b1b;        
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li {
+    float: left;
+    display: inline-block; 
+    background-color: #1b1b1b;
+    margin: 0 5px;
+    line-height: 70px;
+    z-index: 100;    
+}
+
+nav ul li a:hover {
+    color: goldenrod;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #FFD700, 0 0 5px #EED700;
+}
+
+nav ul ul li a:hover {
+    color:goldenrod;
+    box-shadow: none;
+}
+nav ul li a {
+    color: white; 
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    border-top: 3px solid goldenrod;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+nav ul li:hover > ul {
+    top: 70px ;
+    opacity:1;
+    visibility: visible;
+}
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+nav .logo {
+    float: left;
+    
+}
+
+button {
+    padding: 9px 25px;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button {
+    background-color:#EED700 ;
+}
+
+.cart i {
+    font-size: 20px;
+}
+
+
+
+
+

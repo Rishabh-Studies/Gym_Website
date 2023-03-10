@@ -1,0 +1,51 @@
+.Arrangement {
+    background: url(../Pictures/Founder_background.jpg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;    
+}
+
+.Annoying_Image {
+    height: 50;
+}
+
+.Founder_Page {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    margin-top: 150px ;
+    height:350px;
+}
+
+.Founder_Page h1 {
+    color: gold;
+}
+
+.Problem_image {    
+    height: 250px;
+    width: 250px; 
+    clip-path: circle();
+}
+
+
+.Founder_Name {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: gold;
+}
+
+.Founder_Info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 7px;
+    border: 2px solid gold;
+    text-align: center;
+    position: relative;
+    float: right;
+    width: 40%;
+    background: rgba(0, 0, 0, 0.9);
+    color: #ccc;
+}
+

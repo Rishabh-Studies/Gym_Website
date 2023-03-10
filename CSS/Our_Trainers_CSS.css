@@ -1,0 +1,141 @@
+.Trainers_Main {
+    display: flex;
+    flex-direction: column;
+    background: url(../Pictures/Trainers_Background.jpg);
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    background-size: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.Trainers_Main h1 {
+    background: rgba(0, 0, 0, 0.9);
+    color: goldenrod;
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.Three_at_a_time {
+    display: flex;
+    color: #ccc;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+
+.row_1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+    background: url(../Pictures/Sabandra_Singh.jpeg);
+    height: 210px;
+    width: 270px;
+    background-size: cover;    
+}
+
+.row_2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+    background: url(../Pictures/Sandy_DJwala.jpeg);
+    height: 210px;
+    width: 270px;
+    background-size: cover;
+}
+
+
+.row_3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+    background: url(../Pictures/Richandra.jpeg);
+    height: 210px;
+    width: 270px;
+    background-size: cover;
+}
+
+.row_4 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+    background: url(../Pictures/Anay_Rastogi.jpg);
+    height: 210px;
+    width: 270px;
+    background-size: cover;
+}
+
+.row_5 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+    background: url(../Pictures/Jeswaal_Naweda.jpeg);
+    height: 210px;
+    width: 270px;
+    background-size: cover;
+}
+
+.row_6 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+    background: url(../Pictures/Nateshwar_Panday.jpeg);
+    height: 210px;
+    width: 270px;
+    background-size: cover;
+}
+
+.Trainers_Main h4 {
+    background: rgba(0, 0, 0, 0.9);
+    color: gold;
+}
+
+.row_4 a {
+    text-decoration: none;
+    color: gold;
+}
+
+.row_1 h4 {
+    margin-top: 55px;
+}
+
+.row_2 h4 {
+    margin-top: 75px;
+}
+
+.row_3 h4 {
+    margin-top: 17px;
+}
+
+.row_4 h4 {
+    margin-top: 35px;
+}
+
+.row_5 h4 {
+    margin-top: 17px;
+}
+
+.row_6 h4 {
+    margin-top: 55px;
+}
+
+.Trainer_Content {
+    background:rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Trainer_Content > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.Trainer_Content:hover > * {
+    transform: translateY(0px);
+}
+
+.Trainer_Content:hover {
+    opacity: 1;
+}
+
